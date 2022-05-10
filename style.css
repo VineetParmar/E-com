@@ -1,0 +1,897 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Spartan',sans-serif;
+}
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4{
+    font-size: 20px;
+    color: #222;
+}
+
+h6{
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+.myDark p{
+    color: #f6f6f7;
+}
+
+.section-p1{
+    padding: 40px 80px;
+}
+
+.section-m1{
+    margin: 40px 0;
+} 
+
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border:none;
+    outline: none;
+    transition: 0.2s;
+}
+#weather{
+    height: 30px;
+    width: 30px;
+    border-radius: 6px;
+    background: orangered;
+    color: yellow;
+}
+
+body{
+    width: 100%;
+    background-color: white;
+    color:black;
+}
+.myDark{
+    background-color:rgb(102 102 102);
+    color:white;
+}
+#coupon{
+    height:450px;
+    width:750px;
+    z-index: 100;
+    position: absolute;
+    margin-left: 30%;
+
+}
+#coupon>img{
+    height:446px;
+    width: 100%;
+    
+}
+#coupon>button{
+    width:30px;
+    height:30px;
+    position: absolute;
+    margin-left: 96%;
+}
+
+
+
+
+/* Header */
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 80px;
+    background-color: #E3E6f3;
+    box-shadow:0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+.myDark #header{
+    background-color:rgb(102 102 102);
+}
+.logo {
+    height: 70px;
+    width: 100%;
+    box-shadow: 7px 5px 7px grey;
+    border-radius: 4px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#mode{
+    height: 30px;
+    width: 30px;
+    box-shadow: 1px 1px 7px 1px grey;
+    border-radius: 6px;
+    color: white;
+    background: grey;
+}
+
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.2s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: blue;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 40%;
+    height: 3px;
+    background-color:blue;
+    position:absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#mobile{
+    display: none;
+    align-items: center;
+}
+ #close{
+     display: none;
+ }
+
+
+
+
+/*Home Page*/
+#model{
+    background-image: url("images/summerdays.jpg");
+    background-size: cover;
+    /* background-image: url("images/pngwing.com\ \(1\).png"); */
+    height: 90vh;
+    width: 100%;
+    background-color: #E3E6f3;
+    background-repeat: no-repeat;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+#model h4{
+    padding-bottom: 15px;
+}
+#model h1{
+    color: rgb(72, 72, 247);
+}
+#model>button{
+     background-image: url(images/pngwing.com\ \(9\).png);
+     background-color: transparent;
+     color:white;
+     border: 0;
+     padding:  15px 70px 10px 60px;
+     border-radius: 10px;
+     background-repeat: no-repeat;
+     cursor: pointer;
+     font-weight: 700;
+     font-size: 18px;
+     transition: 0.2s;
+}
+#model button:hover{
+    color: gray;
+    transform: scale(0.97);
+}
+
+
+
+
+
+/* Facilities */
+.f-box img{
+    width: 100%;
+    height: 140px;
+    margin-bottom: 20px;
+}
+#features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+#features .f-box{
+    width: 240px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.04);
+    border: 4px solid rgb(132, 132, 250) ;
+    border-radius: 6px;
+    margin: 18px 0;
+    transition: 0.2s;
+}
+
+#features .f-box:hover{
+    /* transform: scale(1.1); */
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.08);
+    transform: scale(0.97);
+}
+
+#features .f-box h6{
+    padding: 14px 12px 12px 14px;
+    line-height: 1;
+    color:rgb(87, 87, 175) ;
+    /* background-color: yellowgreen; */
+    font-size: 16px;
+    display: inline-block;
+    background-color: #fddde4;
+}
+#features .f-box:nth-child(2) h6 {
+    background-color: #cdebbc;
+}
+#features .f-box:nth-child(3) h6 {
+    background-color:#fff2e5;
+}
+#features .f-box:nth-child(4) h6 {
+    background-color: #cdd4f8;
+}
+#features .f-box:nth-child(5) h6 {
+    background-color: #f6dbf6;
+}
+#features .f-box:nth-child(6) h6 {
+    background-color:#d1e8f2  ;
+}
+
+
+
+
+
+/* Featured Products */
+#prod-1{
+    text-align: center;
+}
+#prod-1 .main-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#prod-1 .prod{
+    width: 22%;
+    min-width:250px;
+    padding: 10px 12px;
+    border: 2px solid #cce7d0;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(220, 105, 60, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+#prod-1 .prod:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.09);
+    transform: scale(0.97);
+}
+#prod-1 .prod img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+#prod-1 .prod .det{
+    text-align: start;
+    padding: 10px 0;
+}
+
+.det span{
+    color: #606063;
+    font-size: 15px;
+    font-weight:500;
+}
+.myDark span{
+    color: #f6f6f7;
+}
+
+#prod-1 .prod .det h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 18px;
+}
+
+#prod-1 .prod .det i{
+    font-size: 15px;
+    color: rgb(243, 181, 25);
+}
+
+.det h4{
+    padding-top: 7px;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(92, 92, 245);
+    /* color: rgb(255 255 255); */
+}
+.myDark h4{
+    color: rgb(255 255 255);
+}
+
+
+#prod-1 .prod .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    color: rgb(92, 92, 245) ;
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+}
+
+
+
+
+
+/* Banner */
+#bann{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(images/banner.png);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#bann h4{
+    color: #fff;
+    font-size: 20px;
+}
+
+#bann h2{
+    color: #fff;
+    font-size: 40px;
+    padding: 10px 0;
+}
+#bann h2 span{
+    color: #ef3636;
+}
+
+#bann button:hover {
+    background-color: rgb(92, 92, 245);
+    color: #fff;
+    transform: scale(0.97);
+}
+
+
+
+
+/* Banner-2 */
+#se-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+
+#se-banner .ban-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    background-image: url(images/woman-shopping-bags-copy-space.jpg);
+    min-width: 49%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+#se-banner .ban-box2{
+    align-items: flex-end;
+    background-image: url(images/summers.jpg);
+}
+
+#se-banner h4{
+    color:orange;
+    font-size: 24px;
+}
+
+#se-banner h2{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+#se-banner span{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    padding-bottom: 14px;
+}
+
+button.white {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 14px 28px;
+    color: #000;
+    background-color: transparent;
+    cursor: pointer;
+    border:1px solid #fff;
+    outline: none;
+    transition: 0.2s;
+}
+
+#se-banner button:hover {
+    background-color: black;
+    color: #fff;
+    transform: scale(0.97);
+}
+#mid-banner .bann-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    background-image: url(images/summerdays.jpg);
+    min-width: 80%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    margin: 0 65px;
+}
+
+#mid-banner h4{
+    font-size: 30px;
+    color:orangered;
+}
+#mid-banner h2{
+    font-size: 50px;
+}
+#mid-banner button:hover {
+    background-color: black;
+    color: #fff;
+    transform: scale(0.97);
+}
+
+
+
+
+/* banner-4 */
+#bann-3 .bann-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    background-image: url(images/bannerimage.jpg);
+    min-width: 32%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#bann-3 .bann-box-2{
+    background-image: url(images/bannerimgjpg.jpg);
+}
+#bann-3 .bann-box-3{
+    background-image: url(images/young.jpg);
+}
+ 
+#bann-3 h2{
+    color: #fff;
+    font-weight: 900;
+    font-size: 22px;
+}
+
+#bann-3 h3{
+    color: rgb(254, 0, 104);
+    font-weight: 700;
+    font-size: 15px;
+}
+
+#bann-3{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+}
+
+
+
+
+/* form section */
+#forms{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(images/banner.png);
+    background-repeat: no-repeat;
+    background-position: 30% 45%;
+}
+
+#forms h4{
+    font-size: 24px;
+    font-weight: 700;
+    color:#fff;
+}
+
+#forms p{
+    font-size: 16px;
+    font-weight: 700;
+    color:red;
+}
+#forms span{
+    color: yellow;
+}
+
+#forms .form{
+    display: flex;
+
+    
+}
+
+#forms input{
+    height: 40px;
+    padding: 22px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px; 
+    outline: none; 
+    font-size: 14px;
+}
+#forms button{
+    color: #fff;
+    background-color: rgb(92, 92, 245);
+    white-space: nowrap;
+    transition: 0.2s;    
+}
+
+#forms button:hover{
+    transform: scale(0.97);
+    font-size: 15px;
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+/*footer*/
+
+
+.logo2{
+    height: 80px;
+    width: 200px;
+    box-shadow: 7px 5px 7px grey;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+.apps{
+    height: 40px;
+    width: 120px;
+}
+.pay{
+    height: 45px;
+    width: 230px;
+}
+#footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#footer a{
+    font-size: 14px;
+    margin: 4px 0;
+    text-decoration: none;
+    color: #000;
+}
+
+#footer .about{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+
+footer .copyr{
+    text-align: center;
+    padding: 2px 18px;
+}
+
+
+
+
+
+
+
+
+@media(max-width:1599px){
+    #features{
+        justify-content: space-around;
+    }
+    #coupon {
+        height: 360px;
+        width: 700px;
+        margin-left: 18%;
+    }
+    #coupon>img {
+        height: 359px;
+    }
+    #features .f-box {
+        width: 350px;
+    }
+    #prod-1 .prod {
+        min-width: 220px;
+    }
+    #se-banner .ban-box {
+        min-width: 100%;
+    }
+}
+
+
+@media(max-width:799px){
+    /* #header{
+        padding: 10px 15px;
+    } */
+    .section-p1{
+        padding: 20px 20px;
+    }
+    #navbar{
+           display: flex;
+           flex-direction: column;
+           align-items:flex-start;
+           justify-content: flex-start;
+           position: fixed;
+           top: 0;
+           right: -300px;
+           height: 100vh;
+           width: 300px;
+           background-color: #E3E6f3;
+           box-shadow: 0 40px 60px rgba(0,0,0,0.1);
+           padding: 80px 0 0 10px;
+           transition: 0.3s;
+    }
+    #navbar.active{
+        right: 0px;
+    }
+    .myDark #navbar{
+        background-color:grey;
+    }
+    #navbar li{
+        margin-bottom: 25px;
+    }
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+    #mobile i{
+        color:#1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color:#222;
+        font-size: 24px;
+    }
+
+    #bag{
+        display: none;
+    }
+
+    #model {
+        height: 70vh;
+        padding: 0 80px;
+        background-position: top 30% right 30%;
+    }
+    #features {
+        justify-content: center;
+    }
+    #features .f-box {
+        width: 210px;
+        height: 270px;
+        margin: 15px 15px;
+    }
+    
+    #prod-1 .main-container {
+        justify-content: center;
+        
+    }
+    #prod-1 .prod{
+        margin: 15px; 
+    }
+    #mid-banner .bann-box {
+        margin: 0 22px;
+    }
+    #mid-banner h2 {
+        font-size: 30px;
+    }
+    #bann {
+            height: 30vh;
+    }
+    #se-banner .ban-box {
+        min-width: 100%;
+        height: 50vh;
+    }
+    #bann-3 {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0 20px;
+    }
+    #bann-3 .bann-box {
+        width: 32%;
+        height: 30vh;
+    }
+    #bann-3 h3 {
+        color: #fe0068;
+        font-size: 18px;
+    }
+    #bann-3 h2 {
+        color: #7b190a;
+        font-size: 18px;
+    }
+
+    #coupon {
+        height: 280px;
+        width: 550px;
+        margin-left: 2%;
+    }
+    #coupon > img {
+        height: 280px;
+    }
+    #coupon>button {
+        margin-left: 94.4%;
+    }
+}
+
+@media(max-width:477px){
+    .section-p1 {
+        padding: 20px;
+    }
+    h2 {
+         line-height: 30px; 
+    }
+    #header {
+        padding: 10px 20px;
+    }
+    .logo {
+        height: 46px;
+    }
+    #model {
+        height: 70vh;
+        padding: 0px 21px;
+        background-position: top 22% right 65%;
+    }
+    #model h4 {
+        font-size: 17px;
+        color: black;
+    }
+    #model h2 {
+        font-size: 21px;
+        color: #c19373;
+    }
+    #model h1 {
+        color: rgb(79 79 241);
+        font-size: 42px;
+    }
+    #model p {
+        font-size: 14px;
+        font-weight: 800;
+        color: orangered;
+    }
+
+    #model>button {
+        padding: 10px 30px 10px 30px;
+        font-size: 16px;
+    }
+
+    #features {
+        justify-content: space-between;
+    }
+    #features .f-box {
+        width: 165px;
+        margin: 0 0 15px 0;
+    }
+    #prod-1 .prod {
+        width: 100%;
+    }
+    #mid-banner .bann-box {
+        margin: 0 22px;
+    }
+    #mid-banner h4 {
+        font-size: 21px;
+    }
+    #mid-banner h2 {
+        font-size: 15px;
+    }
+    #bann {
+        height: 40vh;
+    }
+    #bann h2 { 
+        font-size: 35px;
+    }
+    #se-banner .ban-box {
+        height: 40vh;
+    }
+    #se-banner h2 {
+        font-size: 30px;
+    }
+    
+    #bann-3 .bann-box {
+        width: 32%;
+        height: 28vh;
+    }
+    #bann-3 h3 {
+        font-size: 13px;
+    }
+
+    #bann-3 h2 {
+        font-size: 16px;
+    }
+    #coupon {
+        height: 200px;
+        width: 320px;
+        margin-left: 0%;
+    }
+    #coupon>button {
+        width:20px;
+        height:20px;
+        margin-left: 93.6%;
+    }
+    #coupon > img {
+        height: 200px;
+    }
+    h2 {
+        font-size: 33px;
+    }
+   
+}

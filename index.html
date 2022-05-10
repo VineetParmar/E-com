@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Wardrobe</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://kit.fontawesome.com/48481a1841.js" crossorigin="anonymous"></script>
+</head>
+<body class="">
+    <section id="header">
+        <div>
+            <a href="#"><img src="images/unnamed (1).jpg" alt="" class="logo"></a>
+
+        </div>
+        <div>
+            <ul id="navbar">
+                <li><button id="weather" onClick="geolocation()">
+                    <i class="fa-solid fa-temperature-high"></i>
+                 </button>
+                 <p id="out"></p></li>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button id="mode" onclick="changeMode()"><i class="fas fa-adjust"></i></button></li>
+                <li id="bag"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <a href="#" id="close"><i class="fas fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <i id="bar" class="fa fa-bars"></i>
+        </div>
+    </section>
+
+    <section id="model">
+        <h4>Best-in-Offer</h4>
+        <h2>Best Value Deals</h2>
+        <h1>On All Products</h1>
+        <p>Save more using coupons & up to 70% Off!</p>
+        <button>Shop Now</button>
+        <div id="coupon">
+            <button onclick="closeCoupon();" >&times;</button>
+            <img src="images/40-off-loandsons.com_promo_code_1 (1).jpg" alt="">
+        </div>
+    </section>
+
+    <section id="features" class="section-p1">
+        <div class="f-box">
+            <img src="images/freeshiping (10).png" alt="">
+            <h6>Free Shipping</h6>
+        </div>
+        <div class="f-box">
+            <img src="images/order(10).png" alt="">
+            <h6>Order Online</h6>
+        </div>
+        <div class="f-box">
+            <img src="images/savemoney1.png" alt="">
+            <h6>Save Money</h6>
+        </div>
+        <div class="f-box">
+            <img src="images/promotions.png" alt="">
+            <h6>Promotions</h6>
+        </div>
+        <div class="f-box">
+            <img src="images/pngwing.com (10).png" alt="">
+            <h6>Branded Products</h6>
+        </div>
+        <div class="f-box">
+            <img src="images/custom.png" alt="">
+            <h6>24/7 Support</h6>
+        </div>
+         <!-- <div class="f-box">
+            <img src="images/freeshiping (10).png" alt="">
+            <h6>Free Shipping</h6>
+        </div>
+        <div class="f-box">
+            <img src="images/freeshiping (10).png" alt="">
+            <h6>Free Shipping</h6>
+        </div> -->
+    </section>
+
+    <section id="prod-1" class="section-p1">
+        <h2>Featured Products</h2>
+        <p>Exculsive Collection New Seasonal Design</p>
+        <div class="main-container">
+            <div class="prod">
+                <img src="images/hrx.jpg" alt="">
+                <div class="det">
+                    <span>Hrx</span>
+                    <h5>Ultralyte Men Black T-shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹620</h4>
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="prod">
+                <img src="images/herenow.jpg" alt="">
+                <div class="det">
+                    <span>HERENOW</span>
+                    <h5>Women Grey Cotton T-shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹580</h4>
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="prod">
+                <img src="images/viratm.jpg" alt="">
+                <div class="det">
+                    <span>WROGN</span>
+                    <h5>Men Olive & Black Casual Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹599</h4>
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="prod">
+                <img src="images/roadster.jpg" alt="">
+                <div class="det">
+                    <span>Roadster</span>
+                    <h5>Women White Solid Casual Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹499</h4>
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="prod">
+                <img src="images/boy.jpg" alt="">
+                <div class="det">
+                    <span>PIPIN</span>
+                    <h5>Boys Red Polo Cotton T-shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹399</h4>
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="prod">
+                <img src="images/kid.jpg" alt="">
+                <div class="det">
+                    <span>Cheery Clumble</span>
+                    <h5>Cream-Coloured Net A-Line Top</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹699</h4>
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="prod">
+                <img src="images/hrxshoe.jpg" alt="">
+                <div class="det">
+                    <span>Hrx</span>
+                    <h5>Men Grey Street Running Shoe</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹999</h4>
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="prod">
+                <img src="images/watch.jpg" alt="">
+                <div class="det">
+                    <span>Fossil</span>
+                    <h5>Men Black Analogue Watch</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹990</h4>
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>  
+        </div>
+    </section>
+
+    <section id="bann" class="section-m1">
+        <h4>Value Offers</h4>
+        <h2>Upto <span>50% Off </span>- All T-shirts & Acessories</h2>
+        <button class="normal">Explore More</button>
+    </section>
+
+    <section id="prod-1" class="section-p1">
+        <h2>New Arrivals</h2>
+        <p>Exculsive Collection New Designs</p>
+        <div class="main-container">
+            <div class="prod">
+                <img src="images/nike.jpg" alt="">
+                <div class="det">
+                    <span>Nike</span>
+                    <h5>Nike Men Black T-shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹499</h4>
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="prod">
+                <img src="images/hrxshoe2.jpg" alt="">
+                <div class="det">
+                    <span>Hrx</span>
+                    <h5>Men Grey Street Running Shoe</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹990</h4>
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="prod">
+                <img src="images/fossil.jpg" alt="">
+                <div class="det">
+                    <span>Fossil</span>
+                    <h5>Men Black Analogue Watch</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹950</h4>
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>  
+            <div class="prod">
+                <img src="images/tradi2.jpg" alt="">
+                <div class="det">
+                    <span>SOJANYA</span>
+                    <h5>Women Blue Cotton Kurti</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹899</h4>
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="prod">
+                <img src="images/kidtr.jpg" alt="">
+                <div class="det">
+                    <span>Cheery Clumble</span>
+                    <h5>Cream-Coloured Net A-Line Top</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹850</h4>
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="prod">
+                <img src="images/kidtra.jpg" alt="">
+                <div class="det">
+                    <span>Kidtra</span>
+                    <h5>Orange Cotton Kurta</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹699</h4>
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="prod">
+                <img src="images/tradi.jpg" alt="">
+                <div class="det">
+                    <span>SOJANYA</span>
+                    <h5>Red Ethnic Cotton Kurta</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹850</h4>
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="prod">
+                <img src="images/virat.jpg" alt="">
+                <div class="det">
+                    <span>WROGN</span>
+                    <h5>Men Olive & Black Casual Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹580</h4>
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="mid-banner">
+        <div class="bann-box">
+            <h4>Summer sale</h4>
+            <h2>Starts from 1st-10th April</h2>
+            <button class="white">Get Notified</button>
+        </div>
+    </section>
+    <section id="se-banner" class="section-p1">
+        <div class="ban-box">
+            <h4>Crazy Deals</h4>
+            <h2>BUY 1 Get 1 Free</h2>
+            <span>the best designs are in sale</span>
+            <button class="white">Learn More</button>
+        </div>
+        <div class="ban-box ban-box2">
+            <h4>Summer Collection</h4>
+            <h2>Be Ready For This Summer</h2>
+            <span>the best designs are in sale</span>
+            <button class="white">Collection</button>
+        </div>
+    </section>
+    <section id="bann-3">
+        <div class="bann-box">
+            <h2>Best Picks</h2>
+            <h3>Exculsive Collection -50% Off</h3>
+        </div>
+        <div class="bann-box bann-box-2">
+            <h2>Enjoy Parties</h2>
+            <h3>Exculsive Party Collection</h3>
+        </div>
+        <div class="bann-box bann-box-3">
+            <h2>Don't Worry</h2>
+            <h3>We are here to Help you Pick</h3>
+        </div>
+    </section>
+
+    <section id="forms" class="section-p1" class="section-m1">
+        <div class="intext">
+            <h4>Sign up & Stay Updated</h4>
+            <p>Get E-mail Updates about Latest Sales & <span>Special Offers.</span>
+            </p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+
+
+
+
+    <div id="footer" class="section-p1">
+        <div class="col">
+            <a href="#model"><img src="images/unnamed (1).jpg" alt="" class="logo2"></a>
+            <h4>Contact</h4>
+            <p><strong>Address:</strong>460 Tower Andheri,Bombay Street,Mumbai-400001.</p>
+            <p><strong>Phone:</strong> (+91) 04 2223 985 / 84 9933 7765</p>
+            <p><strong>Visting Hours:</strong> 10:00 - 19:00,Mon-Fri </p>
+            <div class="social">
+                <h4>Follow Us</h4>
+                <div class="socialicon">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram-square"></i>
+                    <i class="fab fa-twitter-square"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="about">
+            <h4>About Us</h4>
+            <a href="#">About us</a>
+            <a href="#">Terms Of Use</a>
+            <a href="#">Blog</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Corporate Information</a>
+        </div>
+        <div class="about">
+            <h4>Useful Links</h4>
+            <a href="#">Contact Us</a>
+            <a href="#">Shipping</a>
+            <a href="#">Cancellation</a>
+            <a href="#">Returns</a>
+            <a href="#">Gift Cards</a>
+        </div>
+        <div class="col install">
+            <h4>EXPERIENCE APP ON MOBILE</h4>
+            <p>From App Store or Google Play</p>
+            <div class="app">
+                <img src="images/-apple_store.png" alt="" class="apps">
+                <img src="images/google_play.png" alt="" class="apps">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="images/payg.com (11).png" alt="pay" class="pay">
+        </div>
+    </div>
+    <footer>
+        <div class="copyr"> 
+            <hr>
+             <p>&copy; 2022, Vineet Parmar - Full Stack Developer</p>
+        </div>
+</footer>
+<script>
+    window.onload = loadCoupon()
+</script>
+<script src="script.js"></script>
+</body>
+</html>
